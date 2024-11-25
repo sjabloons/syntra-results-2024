@@ -3,18 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev":"vite --open --host",
-    "build":"vite build",
-    "preview":"vite preview --open --host",
-    "deploy-main" : "surge ./dist lafautkdesign3.surge.sh",
-    "postdeploy-main" :"start chrome https://lafautkdesign3.surge.sh",
-    "deploy-develop" : "surge ./dist lafautkdesign3-test.surge.sh",
-    "postdeploy-develop" :"start chrome https://lafautkdesign3-test.surge.sh"
-    
-
+    "dev": "vite --open --host",
+    "build": "vite build",
+    "preview": "vite preview --open --host",
+    "deploy-main": "surge ./dist lafautkdesign3.surge.sh",
+    "postdeploy-main": "start chrome https://lafautkdesign3.surge.sh",
+    "deploy-develop": "surge ./dist lafautkdesign3-test.surge.sh",
+    "postdeploy-develop": "start chrome https://lafautkdesign3-test.surge.sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "canvas-confetti": "^1.9.3"
+  }
 }

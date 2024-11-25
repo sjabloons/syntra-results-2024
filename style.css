@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 :root {
     font-size: 62.5%;
     --LightSlateBlue: hsl(252, 100%, 67%);
@@ -18,7 +19,13 @@
 * {
     box-sizing: border-box;
 }
-
+body {
+    overflow: hidden;
+    min-height: 100vh;
+}
+canvas {
+    pointer-events: none;
+}
 main {
     font-family: "Hanken Grotesk";
     font-size: 1.8rem;
@@ -54,6 +61,11 @@ main {
                     hsla(256, 72%, 46%, 1),
                     hsla(241, 72%, 46%, 0)
                 );
+                opacity: 0;
+                animation-fill-mode: forwards;
+                animation-name: bounceIn;
+                animation-duration: 300ms;
+                animation-delay: 200ms;
                 h3 {
                     font-size: 15vw; /*om te verschalen */
                     font-weight: 800;
