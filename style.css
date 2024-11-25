@@ -18,7 +18,144 @@
 * {
     box-sizing: border-box;
 }
-body {
-    margin: 20px;
+
+main {
     font-family: "Hanken Grotesk";
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: grid;
+    /* min-height: 60rem; om te starten*/
+    section {
+        padding: 3rem;
+        &:nth-child(1) {
+            background-image: linear-gradient(
+                var(--LightSlateBlue),
+                var(--LightRoyalBlue)
+            );
+            border-radius: 0 0 3rem 3rem;
+            text-align: center;
+            color: white;
+            h1 {
+                color: var(--LightLavender);
+                font-weight: 700;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                margin: 3rem auto;
+                gap: 1rem;
+                width: 45%;
+
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background-image: linear-gradient(
+                    hsla(256, 72%, 46%, 1),
+                    hsla(241, 72%, 46%, 0)
+                );
+                h3 {
+                    font-size: 15vw; /*om te verschalen */
+                    font-weight: 800;
+                }
+                h4 {
+                    color: var(--LightLavender);
+                    font-size: 3vw; /*om te verschalen */
+                }
+            }
+            h2 {
+                font-weight: 800;
+                font-size: 2.3rem;
+            }
+            p {
+                color: var(--LightLavender);
+                width: 70%;
+                margin: 2rem auto;
+                line-height: 2.1rem;
+            }
+        }
+        &:nth-child(2) {
+            h1 {
+                color: black;
+                font-weight: 700;
+            }
+            ul {
+                margin: 3rem 0;
+                display: grid;
+                gap: 1.8rem;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 2rem;
+                border-radius: 1rem;
+
+                &:nth-child(1) {
+                    color: var(--LightRed);
+                    background-color: color-mix(
+                        in hsl,
+                        var(--LightRed) 10%,
+                        transparent 100%
+                    );
+                }
+                &:nth-child(2) {
+                    color: var(--OrangeyYellow);
+                    background-color: color-mix(
+                        in hsl,
+                        var(--OrangeyYellow) 20%,
+                        transparent 100%
+                    );
+                }
+                &:nth-child(3) {
+                    color: var(--GreenTeal);
+                    background-color: color-mix(
+                        in hsl,
+                        var(--GreenTeal) 20%,
+                        transparent 100%
+                    );
+                }
+                &:nth-child(4) {
+                    color: var(--CobaltBlue);
+                    background-color: color-mix(
+                        in hsl,
+                        var(--CobaltBlue) 20%,
+                        transparent 100%
+                    );
+                }
+                img {
+                }
+                p {
+                    &:nth-of-type(1) {
+                        margin-right: auto;
+                    }
+                    &:nth-of-type(2) {
+                        color: rgba(0, 0, 0, 0.4);
+                        strong {
+                            font-weight: 800;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            a {
+                padding: 2rem;
+                border-radius: 2.6rem;
+                background-color: var(--DarkGrayBlue);
+                display: block;
+                text-align: center;
+
+                text-decoration: none;
+                color: white;
+
+                font-weight: 700;
+
+                &:hover {
+                    background-image: linear-gradient(
+                        var(--LightSlateBlue, --LightRoyalBlue)
+                    );
+                }
+            }
+        }
+    }
 }
