@@ -50,9 +50,9 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-
-                margin: 3rem auto;
                 gap: 1rem;
+                margin: 3rem auto;
+
                 width: 45%;
 
                 aspect-ratio: 1/1;
@@ -82,7 +82,7 @@ main {
             p {
                 color: var(--LightLavender);
                 width: 70%;
-                margin: 2rem auto;
+                margin: 1rem auto;
                 line-height: 2.1rem;
             }
         }
@@ -95,49 +95,48 @@ main {
                 margin: 3rem 0;
                 display: grid;
                 gap: 1.8rem;
-            }
-            li {
-                display: flex;
-                align-items: center;
-                gap: 1.5rem;
-                padding: 2rem;
-                border-radius: 1rem;
 
-                &:nth-child(1) {
-                    color: var(--LightRed);
-                    background-color: color-mix(
-                        in hsl,
-                        var(--LightRed) 10%,
-                        transparent 100%
-                    );
-                }
-                &:nth-child(2) {
-                    color: var(--OrangeyYellow);
-                    background-color: color-mix(
-                        in hsl,
-                        var(--OrangeyYellow) 20%,
-                        transparent 100%
-                    );
-                }
-                &:nth-child(3) {
-                    color: var(--GreenTeal);
-                    background-color: color-mix(
-                        in hsl,
-                        var(--GreenTeal) 20%,
-                        transparent 100%
-                    );
-                }
-                &:nth-child(4) {
-                    color: var(--CobaltBlue);
-                    background-color: color-mix(
-                        in hsl,
-                        var(--CobaltBlue) 20%,
-                        transparent 100%
-                    );
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    padding: 2rem;
+                    border-radius: 1rem;
+
+                    &:nth-child(1) {
+                        background-color: color-mix(
+                            in hsl,
+                            var(--LightRed) 10%,
+                            transparent 100%
+                        );
+                    }
+                    &:nth-child(2) {
+                        background-color: color-mix(
+                            in hsl,
+                            var(--OrangeyYellow) 20%,
+                            transparent 100%
+                        );
+                    }
+                    &:nth-child(3) {
+                        background-color: color-mix(
+                            in hsl,
+                            var(--GreenTeal) 20%,
+                            transparent 100%
+                        );
+                    }
+                    &:nth-child(4) {
+                        background-color: color-mix(
+                            in hsl,
+                            var(--CobaltBlue) 20%,
+                            transparent 100%
+                        );
+                    }
                 }
                 p {
                     &:nth-of-type(1) {
                         margin-right: auto;
+                        font-weight: 700;
+                        font-size: 1.6rem;
                     }
                     &:nth-of-type(2) {
                         color: rgba(0, 0, 0, 0.4);
@@ -148,27 +147,27 @@ main {
                     }
                 }
             }
-            a {
-                padding: 2rem;
-                border-radius: 2.6rem;
-                background-color: var(--DarkGrayBlue);
-                display: block;
-                text-align: center;
+        }
+        a {
+            padding: 2rem;
+            border-radius: 2.6rem;
+            background-color: var(--DarkGrayBlue);
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
 
-                text-decoration: none;
-                color: white;
-
-                font-weight: 700;
-
-                &:hover {
-                    background-image: linear-gradient(
-                        var(--LightSlateBlue, --LightRoyalBlue)
-                    );
-                }
+            &:hover {
+                background-image: linear-gradient(
+                    var(--LightSlateBlue),
+                    var(--LightRoyalBlue)
+                );
             }
         }
     }
 }
+
 @media (min-width: 700px) {
     :root {
         font-size: 70%;
