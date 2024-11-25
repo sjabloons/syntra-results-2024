@@ -27,7 +27,7 @@ canvas {
     pointer-events: none;
 }
 main {
-    font-family: "Hanken Grotesk";
+    font-family: "Hanken Grotesk", sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
     display: grid;
@@ -53,7 +53,7 @@ main {
                 gap: 1rem;
                 margin: 3rem auto;
 
-                width: 45%;
+                width: 25%;
 
                 aspect-ratio: 1/1;
                 border-radius: 50%;
@@ -62,12 +62,12 @@ main {
                     hsla(241, 72%, 46%, 0)
                 );
                 opacity: 0;
-                animation-fill-mode: forwards;
                 animation-name: bounceIn;
+                animation-fill-mode: forwards;
                 animation-duration: 300ms;
                 animation-delay: 200ms;
                 h3 {
-                    font-size: 15vw; /*om te verschalen */
+                    font-size: 10vw; /*om te verschalen */
                     font-weight: 800;
                 }
                 h4 {
