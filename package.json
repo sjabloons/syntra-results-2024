@@ -6,7 +6,11 @@
     "dev":"vite --open --host",
     "build":"vite build",
     "preview":"vite preview --open --host",
-    "deploy" : "surge ./dist lafautkdesign3.surge.sh"
+    "deploy-main" : "surge ./dist lafautkdesign3.surge.sh",
+    "postdeploy-main" :"start chrome https://lafautkdesign3.surge.sh",
+    "deploy-develop" : "surge ./dist lafautkdesign3-test.surge.sh",
+    "postdeploy-develop" :"start chrome https://lafautkdesign3-test.surge.sh"
+    
 
   },
   "keywords": [],

@@ -123,8 +123,6 @@ main {
                         transparent 100%
                     );
                 }
-                img {
-                }
                 p {
                     &:nth-of-type(1) {
                         margin-right: auto;
